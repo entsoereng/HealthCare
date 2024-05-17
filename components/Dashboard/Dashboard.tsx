@@ -1,9 +1,21 @@
-import React, { ReactNode } from 'react'
-import Sidebar from '@/components/Dashboard/Sidebar'
-import Navbar from '@/components/Dashboard/Navbar'
+import Link from "next/link"
+import {
+  Bell,
+  CircleUser,
+  Home,
+  LineChart,
+  Menu,
+  Package,
+  Package2,
+  Search,
+  ShoppingCart,
+  Users,
+} from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Sidebar from "./Sidebar"
+import Navbar from "./Navbar"
 
-export default function Layout({children}:{children:ReactNode}) {
+export function Dashboard() {
   return (
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
       <Sidebar />
