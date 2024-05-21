@@ -55,7 +55,7 @@ export default function Settings() {
              {
               tabs.map((tab) => {
                 return (
-                  <TabsContent className="w-full" value={tab.value}>
+                  <TabsContent className="w-full" value={tab.value} key={tab.value}>
                   {tab.component}
                  </TabsContent>
                 );
