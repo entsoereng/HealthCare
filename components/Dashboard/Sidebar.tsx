@@ -35,16 +35,7 @@ export default async function Sidebar() {
       icon: ShoppingCart,
       badgeCount: 6,
     },
-    {
-      name: "customers",
-      path: "/dashboard/customers",
-      icon: Users,
-    },
-    {
-      name: "Analytics",
-      path: "/dashboard/analytics",
-      icon: LineChart,
-    },
+    
     {
       name: "Settings",
       path: "/dashboard/settings",
@@ -90,15 +81,6 @@ export default async function Sidebar() {
                   )
                 })
               }
-              
-              
-              <Link
-                href="#"
-                className="flex items-center gap-3 rounded-lg bg-muted px-3 py-2 text-primary transition-all hover:text-primary"
-              >
-                <Package className="h-4 w-4" />
-                Products{" "}
-              </Link>
             </nav>
           </div>
         </div>
