@@ -1,13 +1,11 @@
 import React from 'react'
 import Link from "next/link"
 import {
-  Bell,
   CircleUser,
   Home,
   LineChart,
   Menu,
   Package,
-  Package2,
   Search,
   ShoppingCart,
   Users,
@@ -15,14 +13,6 @@ import {
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import Sidebar from "./Sidebar"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -55,8 +45,7 @@ export default function Navbar() {
                   href="#"
                   className="flex items-center gap-2 text-lg font-semibold"
                 >
-                  <Package2 className="h-6 w-6" />
-                  <span className="sr-only">Acme Inc</span>
+                  <span className="sr-only text-indigo-600">ClinicEase</span>
                 </Link>
                 <Link
                   href="#"
@@ -97,22 +86,6 @@ export default function Navbar() {
                   Analytics
                 </Link>
               </nav>
-              <div className="mt-auto">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Upgrade to Pro</CardTitle>
-                    <CardDescription>
-                      Unlock all features and get unlimited access to our
-                      support team.
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <Button size="sm" className="w-full">
-                      Upgrade
-                    </Button>
-                  </CardContent>
-                </Card>
-              </div>
             </SheetContent>
           </Sheet>
           <div className="w-full flex-1">
