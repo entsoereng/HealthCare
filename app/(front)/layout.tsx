@@ -4,7 +4,7 @@ import React, { ReactNode } from 'react'
 
 export default function Layout({children}:{children:ReactNode}) {
   return (
-    <div>
+    <div className="bg-white">
     <Navbar />
     <div>
       {children}
